@@ -15,8 +15,7 @@ public class Boletin28{
      * @param args the command line arguments
      */
     public static void main(String[] args){
-        Alumno.Direccion direccion1=new Alumno().new Direccion("Vigo",5);
-        Alumno alumno1=new Alumno("Dani",6,direccion1);
+        Alumno alumno1=new Alumno("Dani",6,new Alumno().new Direccion("Vigo",5));
         
         System.out.println(alumno1.mostrar());
         
