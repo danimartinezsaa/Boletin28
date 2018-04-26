@@ -28,30 +28,6 @@ public class Alumno{
         return "Alumno{"+"nombre="+nombre+", nota="+nota+", direccion="+direccion+'}';
     }
 
-    public String getNombre(){
-        return nombre;
-    }
-
-    public void setNombre(String nombre){
-        this.nombre=nombre;
-    }
-
-    public int getNota(){
-        return nota;
-    }
-
-    public void setNota(int nota){
-        this.nota=nota;
-    }
-
-    public Direccion getDireccion(){
-        return direccion;
-    }
-
-    public void setDireccion(Direccion direccion){
-        this.direccion=direccion;
-    }
-    
     public void cambiarNota(int nota){
         this.nota=nota;
     }
@@ -72,22 +48,6 @@ public class Alumno{
         @Override
         public String toString(){
             return "Direccion{"+"calle="+calle+", numero="+numero+'}';
-        }
-
-        public String getCalle(){
-            return calle;
-        }
-
-        public void setCalle(String calle){
-            this.calle=calle;
-        }
-
-        public int getNumero(){
-            return numero;
-        }
-
-        public void setNumero(int numero){
-            this.numero=numero;
         }
 
     }
