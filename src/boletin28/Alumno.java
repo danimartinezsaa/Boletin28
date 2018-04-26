@@ -20,7 +20,6 @@ public class Alumno{
     public Alumno(String nombre, int nota, String calle, int numero){
         this.nombre=nombre;
         this.nota=nota;
-        this.direccion=direccion;
         direccion=new Direccion(calle,numero);
     }
 
