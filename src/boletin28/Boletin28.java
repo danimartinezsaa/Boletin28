@@ -20,6 +20,7 @@ public class Boletin28{
         System.out.println(alumno1.mostrar());
         
         alumno1.cambiarNota(5);
+        alumno1.direccion.setNumero(9);
         
         System.out.println(alumno1.mostrar());
     }

@@ -45,6 +45,10 @@ public class Alumno{
             this.numero=numero;
         }
 
+        public void setNumero(int numero){
+            this.numero=numero;
+        }
+        
         @Override
         public String toString(){
             return "Direccion{"+"calle="+calle+", numero="+numero+'}';
