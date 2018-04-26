@@ -15,12 +15,12 @@ public class Boletin28{
      * @param args the command line arguments
      */
     public static void main(String[] args){
-        Alumno alumno1=new Alumno("Dani",6,new Alumno().new Direccion("Vigo",5));
+        Alumno alumno1=new Alumno("Dani",6,"Vigo",5);
         
         System.out.println(alumno1.mostrar());
         
         alumno1.cambiarNota(5);
-        alumno1.direccion.setNumero(9);
+        alumno1.cambiarNumero(8);
         
         System.out.println(alumno1.mostrar());
     }

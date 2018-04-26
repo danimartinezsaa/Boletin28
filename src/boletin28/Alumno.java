@@ -17,10 +17,11 @@ public class Alumno{
     public Alumno(){
     }
 
-    public Alumno(String nombre, int nota, Direccion direccion){
+    public Alumno(String nombre, int nota, String calle, int numero){
         this.nombre=nombre;
         this.nota=nota;
         this.direccion=direccion;
+        direccion=new Direccion(calle,numero);
     }
 
     @Override
@@ -32,11 +33,15 @@ public class Alumno{
         this.nota=nota;
     }
     
+    public void cambiarNumero(int numero){
+        direccion.setNumero(numero);
+    }
+    
     public String mostrar(){
         return toString()+direccion.toString();
     }
     
-    public class Direccion{
+    private class Direccion{
         String calle;
         int numero;
 
